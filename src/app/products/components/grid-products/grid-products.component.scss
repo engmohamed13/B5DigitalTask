@@ -1,0 +1,55 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+}
+
+.content-left {
+        position: relative;
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+        column-count: 3;
+        column-gap: 10px;
+}
+
+.content-left>.post-block-out {
+        position: relative;
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+        break-inside: avoid-column;
+        box-shadow: 0 0 1px #000;
+}
+
+.content-left>.post-block-out>img {
+        display: block;
+        width: 460px;
+        max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+        .content-left {
+                padding: 0 10px
+        }
+}
+
+@media (max-width: 768px) {
+        .content-left {
+                column-count: 2
+        }
+}
+
+@media (max-width: 480px) {
+        .content-left {
+                column-count: 1
+        }
+}
+
+.btn_buy {
+        background-color: var(--color-bg-success, #1bc47d);
+        border-radius: 10px #1bc47d;
+        float: right;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        bottom: 10px;
+}

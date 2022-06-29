@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of categories.slice(0,10)">
+    <a (click)="getCategoryProducts(item)" class="nav_item" [ngClass]="{'active': selectCategory === item}">{{item}}</a>
+  </li>
+
+</ul>

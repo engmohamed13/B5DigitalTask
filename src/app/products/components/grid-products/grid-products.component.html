@@ -1,0 +1,11 @@
+<div class="content-left" infinite-scroll (scrolled)="onScrollDown($event)" (scrolledUp)="onScrollUp($event)">
+    <div class="post-block-out" *ngFor="let item of products.products">
+        <img [src]="item.images[0]" width="200px" height="200px" alt="">
+        <div class="">
+            <h1 class="title">{{item.title}}</h1>
+            <p>{{item.description}}</p>
+            <br>
+            <span class="price">{{item.price}}USD</span><button class="btn_buy" (click)="buy(item)">Buy Now</button>
+        </div>
+    </div>
+</div>
